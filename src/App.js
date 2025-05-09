@@ -9,9 +9,9 @@ function App() {
     <>
       <Header/>
       <div className="main">
-        <Content/>
+        <Content text="content 1" number={7} active={true}/>
         <MainMenu/>
-        <Content/>
+        <Content text="content 2" number={5} active={false}/>
       </div>
       <Footer/>
     </>

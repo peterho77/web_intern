@@ -5,6 +5,10 @@
   padding:30px;
 }
 
+.box.box--active{
+  background:green;
+}
+
 .main{
   display:flex;
   justify-content:space-between;
