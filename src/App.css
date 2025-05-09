@@ -9,6 +9,10 @@
   background:green;
 }
 
+.input--active{
+  background:yellow;
+}
+
 .main{
   display:flex;
   justify-content:space-between;

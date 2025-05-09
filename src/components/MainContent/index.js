@@ -1,3 +1,5 @@
+import { FaAppleAlt } from "react-icons/fa";
+
 function MainMenu(){
     const css = {
         // color: "yellow",
@@ -8,9 +10,8 @@ function MainMenu(){
         <>
             <div className="box">
                 <div className="test" style={css}>
-                    Xin chào {name}
+                    Xin chào {name} <FaAppleAlt />
                 </div>
-            
                 <div className="test" style={css}>
                     Hello world
                 </div>
