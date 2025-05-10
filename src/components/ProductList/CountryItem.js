@@ -5,7 +5,7 @@ function CountryItem(props){
             <li className="country_item">
                 <span>{item.name}</span>
                 <ul>
-                    {item.city.map((city)=><li>{city.name}</li>)}
+                    {(item.city || []).map((city)=><li>{city.name}</li>)}
                 </ul>
             </li>
         </>

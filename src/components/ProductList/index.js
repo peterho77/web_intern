@@ -8,7 +8,7 @@ function ProductList(){
         <>
             <div className="product_list">
                 {
-                    productList.map((item)=>
+                    (productList || []).map((item)=>
                         (<ProductItem item={item} key={item.id}/>)
                     )
                 }
@@ -16,7 +16,7 @@ function ProductList(){
             <div>
                 <ul className="country_list">
                     {
-                        country.map((item)=>(<CountryItem item={item} key={item.id}/>))
+                        (country || []).map((item)=>(<CountryItem item={item} key={item.id}/>))
                     }
                 </ul>
             </div>
