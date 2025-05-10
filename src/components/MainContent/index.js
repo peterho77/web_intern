@@ -5,6 +5,13 @@ function MainMenu(){
         // color: "yellow",
         // backgroundColor: "blue"
     }
+    const arrayMenu = [
+        "Trang chủ",
+        "Sản phẩm",
+        "Tin tức",
+        "Giới thiệu",
+        "Liên hệ"
+    ];
     let name = "Pham Chí Trọng"
     return (
         <>
@@ -15,6 +22,13 @@ function MainMenu(){
                 <div className="test" style={css}>
                     Hello world
                 </div>
+                <ul>
+                    {
+                        arrayMenu.map((item,index)=>
+                            (<li key={index}>{item}</li>)
+                        )
+                    }
+                </ul>
             </div>
         </>
     )
