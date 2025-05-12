@@ -7,6 +7,9 @@ import Navigation from './components/Navigation'
 import Login from './components/Login'
 import ProductList from './components/ProductList'
 
+import Cart from './components/Cart'
+
+
 function App() {
   return (
     <>
@@ -22,6 +25,7 @@ function App() {
         <ProductList/>
       </div>
       <Footer/>
+      <Cart/>
     </>
   );
 }

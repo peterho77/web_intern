@@ -1,4 +1,6 @@
 import { FaAppleAlt } from "react-icons/fa";
+import Lamp from "../Lamp/index.js"
+
 
 function MainMenu(){
     const css = {
@@ -12,7 +14,8 @@ function MainMenu(){
         "Giới thiệu",
         "Liên hệ"
     ];
-    let name = "Pham Chí Trọng"
+
+    let name = "Hồ Công Thiên Đạt";
     return (
         <>
             <div className="box">
@@ -29,6 +32,7 @@ function MainMenu(){
                         )
                     }
                 </ul>
+                <Lamp/>
             </div>
         </>
     )
