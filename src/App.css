@@ -1,3 +1,7 @@
+*{
+  box-sizing:border-box;
+}
+
 .box{
   background:#ddd;
   margin-bottom:15px;

@@ -6,9 +6,11 @@ import Content from './components/Content'
 import Navigation from './components/Navigation'
 import Login from './components/Login'
 import ProductList from './components/ProductList'
-
 import Cart from './components/Cart'
-
+import UseEffect1 from './components/UseEffect1'
+import UseEffect2 from './components/UseEffect2'
+import UseEffect3 from './components/Pagination'
+import TabList from './components/TabList'
 
 function App() {
   return (
@@ -26,6 +28,10 @@ function App() {
       </div>
       <Footer/>
       <Cart/>
+      <UseEffect1/>
+      {/* <UseEffect2/> */}
+      <UseEffect3/>
+      <TabList/>
     </>
   );
 }
