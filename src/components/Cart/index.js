@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Cart.scss"
+import UseContext1 from "../UseContext"
 
 
 function Cart(){
@@ -31,6 +32,9 @@ function Cart(){
                     </tr>
                 </tbody>
             </table>
+            <div className="box">
+                <UseContext1/>
+            </div>
         </>
     )
 }

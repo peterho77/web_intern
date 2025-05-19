@@ -8,9 +8,13 @@ import Login from './components/Login'
 import ProductList from './components/ProductList'
 import Cart from './components/Cart'
 import UseEffect1 from './components/UseEffect1'
-import UseEffect2 from './components/UseEffect2'
-import UseEffect3 from './components/Pagination'
+// import UseEffect2 from './components/UseEffect2'
+import UseEffect3 from './components/UseEffect3'
 import TabList from './components/TabList'
+import UseRef from './components/UseRef'
+import RandomGift from './components/UseRef2'
+import UseRef3 from './components/UseRef3'
+
 
 function App() {
   return (
@@ -32,6 +36,9 @@ function App() {
       {/* <UseEffect2/> */}
       <UseEffect3/>
       <TabList/>
+      <UseRef/>
+      <RandomGift/>
+      <UseRef3/>
     </>
   );
 }
