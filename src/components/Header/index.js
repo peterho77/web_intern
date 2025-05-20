@@ -1,11 +1,14 @@
-function Header(){
+import {memo} from "react"
+
+function Header(props){
+    const {onCounter, onReset} = props
+    console.log("header");
     return (
         <>
-            <div className="box">
-                Header
-            </div>
+            <button onClick={onCounter}>CLick</button>
+            <button onClick={onReset}>Reset</button>
         </>
     )
 }
 
-export default Header;
+export default memo(Header);

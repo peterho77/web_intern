@@ -1,20 +1,23 @@
-import {useState,useRef} from "react"
+import {useState,useRef,useCallback} from "react"
+import Header from "../Header"
 
 function UseRef(){
     const [counter, setCounter] = useState(0)
     const counterRef = useRef(0);
 
-    const handleClick = () => {
+    const handleClick = useCallback(()=>{
         setCounter(counter => counter + 1)
         counterRef.current += 1
-    }
+    },[]);
 
-    console.log(counter);
-    console.log(counterRef);
+    const handleReset = useCallback(()=>{
+        setCounter(0);
+    },[]);
 
     return (
         <>
-            <button onClick={handleClick}>CLick</button>
+            <p>Kết quả: {counter}</p>
+            <Header onCounter={handleClick} onReset={handleReset}/>
         </>
     )
 }
