@@ -1,0 +1,27 @@
+.product{
+    &__list{
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    &__item{
+        width:30%;
+
+    }
+
+    &__img{
+        width:100%;
+        aspect-ratio:4/3;
+
+        img{
+            width:100%;
+            object-fit:cover;
+        }
+    }
+
+    &__discount{
+        text-align:center;
+    }
+
+
+}

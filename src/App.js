@@ -14,6 +14,9 @@ import TabList from './components/TabList'
 import UseRef from './components/UseRef'
 import RandomGift from './components/UseRef2'
 import UseRef3 from './components/UseRef3'
+import UseReducer1 from './components/UseReducer'
+import UseReducer2 from './components/UseReducer2'
+import Todos from './components/Todos'
 
 
 function App() {
@@ -39,6 +42,9 @@ function App() {
       <UseRef/>
       <RandomGift/>
       <UseRef3/>
+      <UseReducer1/>
+      <UseReducer2></UseReducer2>
+      <Todos></Todos>
     </>
   );
 }
